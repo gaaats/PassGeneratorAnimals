@@ -1,4 +1,4 @@
-package com.passpackfour.passgeneratorplants
+package com.passpackhalcyon.passgeneratoranimals
 
 
 import com.google.gson.annotations.SerializedName

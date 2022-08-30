@@ -1,4 +1,4 @@
-package com.passpackfour.passgeneratorplants
+package com.passpackhalcyon.passgeneratoranimals
 
 import org.junit.Test
 

@@ -1,10 +1,9 @@
-package com.passpackfour.passgeneratorplants
+package com.passpackhalcyon.passgeneratoranimals
 
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +11,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
-import com.passpackfour.passgeneratorplants.databinding.FragmentResultBinding
+import com.passpackhalcyon.passgeneratoranimals.databinding.FragmentResultBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -98,54 +97,32 @@ class ResultFragment : Fragment() {
         super.onDestroyView()
     }
 
-    private suspend fun generatePass() {
+    private fun generatePass() {
         val listPlants = listOf(
-            "a rose",
-            "a tulip",
-            "a carnation",
-            "a dandelion",
-            "a geranium",
-            "a rosebay",
-            "a lily",
-            "a crocus",
-            "an iris",
-            "a chrysanthemum",
-            "a freesia",
-            "a violet",
-            "a petunia",
-            "a sunflower",
-            "a cornflower",
-            "pansy",
-            "forget-me-nots",
-            "marigold",
-            "a daffodil",
-            "a daisy",
-            "an orchid",
-            "a poppy",
-            "a gladiolus",
-            "a dahlia",
-            "a peony",
-            "an aster",
-            "a gerbera",
-            "a fuchsia",
-            "bellflowers",
-            "a buttercup",
-            "lavender",
-            "a primula",
-            "a primrose",
-            "camellia",
-            "gardenia",
-            "a clover",
-            "lilac",
-            "snowdrops",
-            "lily-of-the-valley",
-            "a hyacinth",
-            "heather",
-            "a delphinium"
+            "bison",
+            "Koala",
+            "Dragon",
+            "Crocodile",
+            "Dingo",
+            "Platypus",
+            "Lynx",
+            "Reindeer",
+            "Bears",
+            "Wolf",
+            "Moose",
+            "Florida Manatee",
+            "Bobcat",
+            "Anaconda",
+            "Jaguar",
+            "Monkey",
+            "Turtle",
+            "Capybara",
+            "Whale",
+            "Lions"
         )
 
         for (element in listPlants){
-            if (textPass.length <= 100) {
+            if (textPass.length <= 64) {
                 textPass = textPass + generateRandomNumber() + element
             }
         }

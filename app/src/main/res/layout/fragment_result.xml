@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_black"
         android:gravity="center"
-        android:textColor="@color/main_colour_black"
+        android:textColor="@color/black"
         android:text="Please wait, be patient..."
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="@id/lottie_anim_vaiting"

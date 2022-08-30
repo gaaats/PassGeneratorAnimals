@@ -1,4 +1,4 @@
-package com.passpackfour.passgeneratorplants
+package com.passpackhalcyon.passgeneratoranimals
 
 import retrofit2.Response
 import retrofit2.http.GET
